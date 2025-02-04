@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=false">
+    <link rel="stylesheet" href="style.css">
+    <title>Passcode</title>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <p id="clock"></p>
+            <p id="cal"></p>
+        </div>
+        <div id="bottom">
+            <button id="swipe" onclick="unlockScreen()"></button>
+            <i>Tap to Unlock</i>
+        </div>
+    </div>
+    <div id="pswd-container">
+        <i>Enter Your Pin</i>
+        <div id="pswd-display">
+            <div class="pin-display"></div>
+            <div class="pin-display"></div>
+            <div class="pin-display"></div>
+            <div class="pin-display"></div>
+        </div>
+        <i id="err-msg">Wrong Pin! Try Again</i>
+        <div id="keypad">
+            <button class="pin-key" id="zero" data-value="0">0</button>
+        </div>
+    </div>
+    <div id="success-screen">
+        <i>Success!</i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

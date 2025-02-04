@@ -41,6 +41,7 @@ const hammer = new Hammer(document);
 hammer.get('swipe').set({ direction: Hammer.DIRECTION_UP });
 
 hammer.on('swipe', function(e) {
+    e.preventDefault();
     if (!isSwiped) {
         isSwiped = true;
         unlockScreen();

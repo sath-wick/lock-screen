@@ -12,11 +12,12 @@
 }
 
 html, body {
-    touch-action: auto; /* default behavior */
+    touch-action: none;
+    overflow: hidden;
   }
 
 body{
-    height: 100vh;
+    height: 100dvh;
     background-image: url("src/bg.jpeg"), url('src/blur-bg.jpg');
     background-position: center;
     background-size: cover;
